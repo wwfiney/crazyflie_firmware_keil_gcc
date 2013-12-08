@@ -348,7 +348,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <VariousControls>
-              <MiscControls>--preinclude stm32f10x_conf.h --preinclude errno-base.h --diag_suppress=1295,1207</MiscControls>
+              <MiscControls>--preinclude stm32f10x_conf.h --preinclude errno-base.h --diag_suppress=1295,1207,111,191,550,68,188,167,186,61,144,767</MiscControls>
               <Define>STM32F10X_MD M_PI=3.14159265358979f</Define>
               <Undefine></Undefine>
               <IncludePath>.\config;.\drivers\interface;.\hal\interface;.\lib\CMSIS\Core\CM3;.\lib\FreeRTOS\include;.\lib\STM32F10x_StdPeriph_Driver\inc;.\modules\interface;.\utils\interface;.\lib\FreeRTOS\portable\ARM\ARM_CM3</IncludePath>

@@ -49,6 +49,8 @@ static struct crtpLinkOperations nopLink = {
   (void*) nopFunc,
   (void*) nopFunc,
   (void*) nopFunc,
+	(void*) nopFunc,
+	(void*) nopFunc,
 }; 
 #else
 static struct crtpLinkOperations nopLink = {
