@@ -6,6 +6,7 @@ Note:
 1 Check your keil target setting before use it!
 2 Reduce heap size FreeRTOS used from 15K to 12K
 3 Version number not porting
+4 Specify scat_cload.txt as the linker scatter file if use CLoader
 
 This project contains the source code for the Crazyflie firmware. More information can be found on the 
 [Bitcraze wiki](http://wiki.bitcraze.se/projects:crazyflie:index)
