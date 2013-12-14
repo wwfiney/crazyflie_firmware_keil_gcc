@@ -169,8 +169,8 @@ void logInit(void)
     return;
 
 #if defined(__CC_ARM)
-    logs = (struct log_s*)Image$$LOG$$Base;
-  logsLen = Image$$LOG$$Length+Image$$LOG$$ZI$$Length;
+    logs = (struct log_s*)&Image$$LOG$$Base;
+  logsLen = (int)&Image$$LOG$$Length+ (int)&Image$$LOG$$ZI$$Length;
 #else
   logs = &_log_start;
   logsLen = &_log_stop - &_log_start;

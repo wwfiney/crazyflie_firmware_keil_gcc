@@ -85,8 +85,8 @@ void paramInit(void)
   if(isInit)
     return;
 #if defined(__CC_ARM)
-    params = (struct param_s *)Image$$PARAM$$Base;
-  paramsLen = Image$$PARAM$$Length + Image$$PARAM$$ZI$$Length;
+    params = (struct param_s *)&Image$$PARAM$$Base;
+  paramsLen = (int)&Image$$PARAM$$Length + (int)&Image$$PARAM$$ZI$$Length;
 #else
   params = &_param_start;
   paramsLen = &_param_stop - &_param_start;
